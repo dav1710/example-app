@@ -1,0 +1,191 @@
+body{
+    width: 100%;
+    background-image: url("../img/Background.png");
+    background-size: contain;
+}
+a{
+    text-decoration: none;
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: normal;
+}
+#map{
+    height: 230px;
+    width: 275px;
+    border-radius: 3%;
+}
+.wrapper {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.leaflet-top, .leaflet-bottom {
+    display: none;
+}
+.logo{
+    width: 80%;
+}
+.uav_navbar li{
+    margin-right: 30px;
+    margin-top: 20px;
+}
+.illustration{
+    width: 85%;
+}
+.title h3{
+    font-size: 30px;
+    font-weight: lighter;
+    color: #fff;
+    opacity: 0.8;
+}
+.title{
+    margin-bottom: 20px;
+}
+.content p{
+    font-size: 25px;
+    font-weight: lighter;
+    color: #fff;
+    letter-spacing: 1.7px;
+    opacity: 0.8;
+}
+.container_about{
+    margin-top: 10%;
+}
+.container_us{
+    width: 50%;
+}
+.container_we_can li{
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 23px;
+    opacity: 0.8;
+    letter-spacing: 1.8px;
+}
+.we_can_gif{
+    width: 60%;
+    margin-top: 15%;
+}
+ul{
+    list-style-type: none;
+}
+ul li{
+    font-size: 18px;
+}
+ul .we_can_li::before{
+    background-color: #ffffff;
+    content: "";
+    font-weight: bold;
+    display: inline-block;
+    width: 10px !important;
+    height: 10px;
+    border-radius: 25%;
+    margin-left: -1em;
+    margin-right: 10px;
+}
+.we_can_li2{
+    margin-left: 50px;
+}
+ul .we_can_li2::before{
+    background-color: #b1aeae;
+    content: "";
+    font-weight: bold;
+    display: inline-block;
+    width: 5px !important;
+    height: 5px;
+    border-radius: 25%;
+    margin-left: -1em;
+    margin-right: 10px;
+}
+.gif_container{
+    margin-left: 10%;
+}
+.container_we_can{
+    margin-top: 10%;
+}
+ul .project_li::before{
+    background-color: #0EAFD0;
+    content: "";
+    font-weight: bold;
+    display: inline-block;
+    width: 15px !important;
+    height: 15px;
+    border-radius: 25%;
+    border: none;
+    margin-left: -1em;
+    margin-right: 10px;
+}
+.container_project{
+    width: 80%;
+}
+.our_project_gif{
+    margin-left: -5%;
+}
+.our_project_list{
+    margin-left: 2%;
+}
+.our_project_list li{
+    margin-bottom: 10px;
+}
+.project_gif{
+    width: 85%;
+}
+.our_project_parking{
+    margin-left: 10%;
+}
+.footer_color{
+    color: #fff;
+    font-weight: 300;
+}
+.container_team{
+    margin-top: 10%;
+}
+hr{
+    height: 2px !important;
+    color: #fff;
+}
+h5{
+    color: #fff;
+    font-weight: 300;
+}
+
+@media (max-width: 1201px) {
+    .wrapper {
+        max-width: 1201px;
+    }
+    .container_about{
+        margin-left: 20%;
+    }
+    .container_we_can{
+        margin-left: 20%;
+    }
+    .container_team{
+        margin: 0 10%;
+    }
+    .container_us{
+        width: 100%;
+    }
+    .container_project{
+        width: 100%;
+    }
+    .container_our_project{
+        flex-direction: column;
+    }
+    .our_project_gif{
+        margin-left: 5%;
+        margin-bottom: 5%;
+        width: 100%;
+    }
+    .our_project_list{
+        width: 100%;
+    }
+    .container_team{
+        margin-left: 20%;
+    }
+    .container_team img{
+        width: 100%;
+    }
+    .container_footer_right{
+        margin-left: 10% !important;
+    }
+}
+
