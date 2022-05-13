@@ -1,7 +1,9 @@
 body{
-    width: 100%;
     background-image: url("../img/Background.png");
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    background-attachment: fixed;
 }
 a{
     text-decoration: none;
@@ -9,15 +11,33 @@ a{
     font-size: 20px;
     font-weight: normal;
 }
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-transition: .2s linear;
+    -o-transition: .2s linear;
+    transition: .2s linear;
+    z-index: 999;
+}
+.header_active{
+    background: #111A30;
+    opacity: 0.8;
+}
+.wrapper{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 #map{
     height: 230px;
     width: 275px;
     border-radius: 3%;
-}
-.wrapper {
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
 }
 .leaflet-top, .leaflet-bottom {
     display: none;
@@ -139,6 +159,9 @@ ul .project_li::before{
 .container_team{
     margin-top: 10%;
 }
+.container_team img{
+    width: 100%;
+}
 hr{
     height: 2px !important;
     color: #fff;
@@ -147,7 +170,19 @@ h5{
     color: #fff;
     font-weight: 300;
 }
-
+.container_footer_right {
+    margin-left: 2% !important;
+    width: 100%;
+    max-width: 100%;
+}
+.container_footer_left{
+    width: auto;
+}
+@media (max-width: 1570px) {
+    .container_footer_right {
+        margin-left: 2% !important;
+    }
+}
 @media (max-width: 1201px) {
     .wrapper {
         max-width: 1201px;
@@ -160,9 +195,6 @@ h5{
     }
     .container_team{
         margin: 0 10%;
-    }
-    .container_us{
-        width: 100%;
     }
     .container_project{
         width: 100%;
@@ -188,4 +220,35 @@ h5{
         margin-left: 10% !important;
     }
 }
-
+@media (max-width: 980px) {
+    .container_about{
+        margin-top: 30%;
+        flex-wrap: wrap !important;
+    }
+    .container_about img{
+        width: 80% !important;
+    }
+    .container_us{
+        width: 100% !important;
+    }
+    .container_we_can{
+        flex-wrap: wrap !important;
+    }
+    .gif_container{
+        text-align: center !important;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+}
+@media (max-width: 665px) {
+    ul li{
+        display: grid;
+        font-size: 14px;
+    }
+    .container_footer_right{
+        margin-left: 0 !important;
+    }
+    .footer_color img{
+        width: 20px;
+    }
+}
